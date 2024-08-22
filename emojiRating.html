@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="emojiRating.css">
+</head>
+<body>
+    <div class="container">
+        <form id="emoji">
+            <input type="radio" id="enojado" name="emoji" value="enojado"><label for="enojado">😒</label>
+            <input type="radio" id="neutral" name="emoji" value="neutral"><label for="neutral">😐</label>
+            <input type="radio" id="feliz" name="emoji" value="feliz"><label for="feliz">😁</label>
+            <div class="texto">Resultado: <span id="resultado">feliz</span></div>
+        </form>
+
+        <button class="enviar" onclick="resultado()">Enviar</button>
+        <p>Enojados: <a id="enojados">0</a></p>
+        <p>Neutrales: <a id="neutrales">0</a></p>
+        <p>Felices: <a id="felices">0</a></p>
+    </div>
+
+    <script src="emojiRating.js"></script>
+</body>
+</html>
